@@ -5,7 +5,7 @@ Fernando Niwes fniwes@gmail.com
 Pablo Gallazzi pablogallazzi@gmail.com
 Jorge Cabrera jorge.cabrera@hotmail.com		/UrielMys/meli-regalos.git-estimamos tres dias-iCro	
 Ayelen Tolay ayelen.tolay@mercadolibre.com
-Eric Brandwein eric.brandwein@mercadolibre.com
+Eric Brandwein eric.brandwein@mercadolibre.com              Team42 - Entrega: 6/3 - https://github.com/ericbrandwein/organizador-de-regalos
 Nicolás De Giácomo nicolas.de.giacomo@hotmail.com
 Lucas Rossi lucasrossi20@gmail.com
 Francisco Curdi franciscocurdi@gmail.com
@@ -14,4 +14,4 @@ Kenneth Weinberg Waks ken.weinberg@mercadolibre.com
 Shai Bianchi shai.bianchi@mercadolibre.com
 Guido Arnone e-mail: guido.arnone@mercadolibre.com
 Uriel Mysler uriel.mysler@mercadolibre.com	/UrielMys/meli-regalos.git-estimamos tres dias-iCro
-Diego Sebastian García garciadiegosebastian@gmail.com
+Diego Sebastian García garciadiegosebastian@gmail.com       Team42 - Entrega: 6/3 - https://github.com/ericbrandwein/organizador-de-regalos
