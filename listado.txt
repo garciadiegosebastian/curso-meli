@@ -6,7 +6,6 @@ Pablo Gallazzi pablogallazzi@gmail.com
 Jorge Cabrera jorge.cabrera@hotmail.com		/UrielMys/meli-regalos.git-estimamos tres dias-iCro	
 Ayelen Tolay ayelen.tolay@mercadolibre.com /lucasr20/aplicacion-meli  
 Eric Brandwein eric.brandwein@mercadolibre.com Team42 - Entrega: 6/3 - https://github.com/ericbrandwein/organizador-de-regalos
-Nicolás De Giácomo nicolas.de.giacomo@hotmail.com
 Lucas Rossi lucasrossi20@gmail.com /lucasr20/aplicacion-meli
 Francisco Curdi franciscocurdi@gmail.com /lucasr20/aplicacion-meli
 Candelaria Campos cande.cp@gmail.com     blancoYdorado 2 dias https://github.com/candecp/proyecto1.git
@@ -19,3 +18,4 @@ juan lopez gabriel.lopez@mercadolibre.com ->grupo meteoro - viernes 6
 barbara allegretti barbara.allegretti@mercadolibre.com ->grupo meteoro - viernes 6
 diego abdala diego.abdala@mercadolibre.com ->grupo meteoro - viernes 6
 Guido Arnone e-mail: guido.arnone@mercadolibre.com Grupo: blackhat 
+Nicolás De Giácomo nicolas.de.giacomo@hotmail.com https://github.com/PabloGallazzi/proyecto-grails-meli grupo1 3 dias
