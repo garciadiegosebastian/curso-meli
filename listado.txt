@@ -12,10 +12,10 @@ Francisco Curdi franciscocurdi@gmail.com /lucasr20/aplicacion-meli
 Candelaria Campos cande.cp@gmail.com     blancoYdorado 2 dias https://github.com/candecp/proyecto1.git
 Kenneth Weinberg Waks ken.weinberg@mercadolibre.com     blancoYdorado 2 dias https://github.com/candecp/proyecto1.git
 Shai Bianchi shai.bianchi@mercadolibre.com Grupo: blackhat URL: https://github.com/ballcue/cumpleCompany
-Guido Arnone e-mail: guido.arnone@mercadolibre.com
 Uriel Mysler uriel.mysler@mercadolibre.com	/UrielMys/meli-regalos.git-estimamos tres dias-iCro
 Diego Sebastian García garciadiegosebastian@gmail.com       Team42 - Entrega: 6/3 - https://github.com/ericbrandwein/organizador-de-regalos
 Renzo Avila renzo.avila@mercadolibre.com -> grupo meteoro - viernes 6
 juan lopez gabriel.lopez@mercadolibre.com ->grupo meteoro - viernes 6
 barbara allegretti barbara.allegretti@mercadolibre.com ->grupo meteoro - viernes 6
 diego abdala diego.abdala@mercadolibre.com ->grupo meteoro - viernes 6
+Guido Arnone e-mail: guido.arnone@mercadolibre.com Grupo: blackhat 
