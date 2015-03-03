@@ -4,14 +4,13 @@ Por favor agregar nombre, apellido y email
 Fernando Niwes fniwes@gmail.com
 Pablo Gallazzi pablogallazzi@gmail.com
 Jorge Cabrera jorge.cabrera@hotmail.com		/UrielMys/meli-regalos.git-estimamos tres dias-iCro	
-Ayelen Tolay ayelen.tolay@mercadolibre.com
+Ayelen Tolay ayelen.tolay@mercadolibre.com /lucasr20/aplicacion-meli  
 Eric Brandwein eric.brandwein@mercadolibre.com
 Nicolás De Giácomo nicolas.de.giacomo@hotmail.com
-Lucas Rossi lucasrossi20@gmail.com
-Francisco Curdi franciscocurdi@gmail.com
+Lucas Rossi lucasrossi20@gmail.com /lucasr20/aplicacion-meli
+Francisco Curdi franciscocurdi@gmail.com /lucasr20/aplicacion-meli
 Candelaria Campos cande.cp@gmail.com
 Kenneth Weinberg Waks ken.weinberg@mercadolibre.com
 Shai Bianchi shai.bianchi@mercadolibre.com
 Guido Arnone e-mail: guido.arnone@mercadolibre.com
 Uriel Mysler uriel.mysler@mercadolibre.com	/UrielMys/meli-regalos.git-estimamos tres dias-iCro
-Diego Sebastian García garciadiegosebastian@gmail.com
