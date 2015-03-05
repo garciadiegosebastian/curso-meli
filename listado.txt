@@ -4,16 +4,16 @@ Por favor agregar nombre, apellido y email
 Fernando Niwes fniwes@gmail.com
 Pablo Gallazzi pablogallazzi@gmail.com
 Jorge Cabrera jorge.cabrera@hotmail.com		/UrielMys/meli-regalos.git-estimamos tres dias-iCro	
-Ayelen Tolay ayelen.tolay@mercadolibre.com /lucasr20/aplicacion-meli  
+Ayelen Tolay ayelen.tolay@mercadolibre.com /lucasr20/aplicacion-meli - Viernes 6  
 Eric Brandwein eric.brandwein@mercadolibre.com Team42 - Entrega: 6/3 - https://github.com/ericbrandwein/organizador-de-regalos
-Lucas Rossi lucasrossi20@gmail.com /lucasr20/aplicacion-meli
-Francisco Curdi franciscocurdi@gmail.com /lucasr20/aplicacion-meli
-Candelaria Campos cande.cp@gmail.com     blancoYdorado 2 dias https://github.com/candecp/proyecto1.git
+Lucas Rossi lucasrossi20@gmail.com /lucasr20/aplicacion-meli - Viernes 6
+Francisco Curdi franciscocurdi@gmail.com /lucasr20/aplicacion-meli - Viernes 6
+Candelaria Campos cande.cp@gmail.com     blancoYdorado 2 dias https ://github.com/candecp/proyecto1.git
 Kenneth Weinberg Waks ken.weinberg@mercadolibre.com     blancoYdorado 2 dias https://github.com/candecp/proyecto1.git
 Shai Bianchi shai.bianchi@mercadolibre.com Grupo: blackhat URL: https://github.com/ballcue/cumpleCompany
 Uriel Mysler uriel.mysler@mercadolibre.com	/UrielMys/meli-regalos.git-estimamos tres dias-iCro
 Diego Sebastian García garciadiegosebastian@gmail.com       Team42 - Entrega: 6/3 - https://github.com/ericbrandwein/organizador-de-regalos
-Renzo Avila renzo.avila@mercadolibre.com -> grupo meteoro - viernes 6
+Renzo Avila renzo.avila@mercadolibre.com -> grupo meteoro - viernes 6  Entrega : https://github.com/renzoavil17/meteoro.git
 juan lopez gabriel.lopez@mercadolibre.com ->grupo meteoro - viernes 6
 barbara allegretti barbara.allegretti@mercadolibre.com ->grupo meteoro - viernes 6
 diego abdala diego.abdala@mercadolibre.com ->grupo meteoro - viernes 6
