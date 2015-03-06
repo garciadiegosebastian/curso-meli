@@ -21,7 +21,7 @@ https://plus.google.com/hangouts/_/gwmvbpqjofvkwutghks77btkhma
 
 ## Team42 
 * **Integrantes:**  Eric Brandwein, Diego Sebastian García
-* **Repositorio:** https://github.com/ericbrandwein/organizador-de-regalos
+* **Repositorio:** https://github.com/garciadiegosebastian/organizadorDeRegalos
 
 ## blancoYdorado 
 * **Integrantes:**  Kenneth Weinberg Waks, Candelaria Campos
