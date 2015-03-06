@@ -17,7 +17,7 @@ https://plus.google.com/hangouts/_/gwmvbpqjofvkwutghks77btkhma
 
 ## iCro 
 * **Integrantes:**  Uriel Mysler, Jorge Cabrera
-* **Repositorio:** https://github.com/UrielMys/meli-regalos.git-estimamos
+* **Repositorio:** https://github.com/UrielMys/meli-regalos.git
 
 ## Team42 
 * **Integrantes:**  Eric Brandwein, Diego Sebastian García
