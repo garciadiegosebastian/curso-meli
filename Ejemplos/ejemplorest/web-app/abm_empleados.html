@@ -9,7 +9,7 @@
 	<table class="table">
 		<thead>
 			<tr>
-				<th>Nombre</th><th>Apellido</th><th>Cumplea&ntilde;os</th>
+				<th>Nombre</th><th>Apellido</th><th>Cumplea&ntilde;os</th><th>Acciones</th>
 			</tr>
 		</thead>
 		<tbody id="empleadoList">
@@ -30,12 +30,19 @@
 			<label>Nacimiento</label>
 			<input class="form-control" type="text" name="nacimiento" id="txtnacimiento" />
 		</div>
+		<div class="form-group">
+			<label>Nacimiento</label>
+			<input class="form-control" type="text" name="nacimiento" id="txtnacimiento" />
+		</div>
 		<button type="button" class="btn btn-primary" id="btnCrear">Crear empleado</button>
 	</form>
 
 	<script type="text/template" id="rowTemplate">
-		<tr>
-			<td>#nombre</td><td>#apellido</td><td>#cumpleanos</td>
+		<tr id="row#id">
+			<td>#nombre</td>
+			<td>#apellido</td>
+			<td>#cumpleanos</td>
+			<td><a href="#" onclick="borrarEmpleado(#id)"><span class="glyphicon glyphicon-remove"></span></a></td>
 		</tr>
 	</script>
 
@@ -55,7 +62,21 @@
 			str = str.replace("#apellido", empleado.lastname);
 			str = str.replace("#cumpleanos", empleado.birthday);
 
+			// Notar que como queremos reemplazar varias veces el texto #id (se usa en al menos dos lugares)
+			// tenemos que hacerlo como un "regular expression", donde la g final significa reemplazar todas
+			// las veces. De lo contrario sólo se reemplazará la primera ocurrencia
+			str = str.replace(/#id/g, empleado.id);
+
 			$("#empleadoList").append(str);
+		}
+
+		function borrarEmpleado(idEmpleado) {
+			var promise = $.ajax("/ejemplorest/empleado/" + idEmpleado + ".json", { method: "DELETE" });
+			promise.done(function() {
+				// Cuando se confirma que se borro el empleado, lo quitamos de la tabla, pero para eso
+				// necesitamos poder identificar la fila, por eso agegamos un id a cada fila
+				$("#row"+idEmpleado).remove();
+			});
 		}
 
 		$("#btnCrear").click(function() {
