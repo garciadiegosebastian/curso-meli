@@ -16,6 +16,13 @@
 		</tbody>
 	</table>
 
+	<form id="formCreate">
+		<div><label>Nombre: <input type="text" name="nombre" id="txtnombre" /></label></div>
+		<div><label>Apellido: <input type="text" name="apellido" id="txtapellido" /></label></div>
+		<div><label>Nacimiento: <input type="text" name="nacimiento" id="txtnacimiento" /></label></div>
+		<button type="button" id="btnCrear">Crear empleado</button>
+	</form>
+
 	<script type="text/template" id="rowTemplate">
 		<tr>
 			<td>#nombre</td><td>#apellido</td><td>#cumpleanos</td>
@@ -41,8 +48,24 @@
 			$("#empleadoList").append(str);
 		}
 
-		listar();
-		listar();
+		$("#btnCrear").click(function() {
+			var json = {
+				name: $("#txtnombre").val(),
+				lastname: $("#txtapellido").val(),
+				birthday: $("#txtnacimiento").val(),
+			}
+
+			var promise = $.ajax("/ejemplorest/empleado.json", {
+				method: "post",
+				contentType: 'application/json; charset=utf-8',
+				data: JSON.stringify(json)
+			});
+
+			promise.done(function(empleado) {
+				agregarEmpleado(0, empleado)
+			})
+		});
+
 		listar();
 	</script>
 </body>
