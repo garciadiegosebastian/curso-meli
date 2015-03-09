@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ABM Empleados</title>
+	<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+</head>
+<body>
+	<table>
+		<thead>
+			<tr>
+				<th>Nombre</th><th>Apellido</th><th>Cumpleanos</th>
+			</tr>
+		</thead>
+		<tbody id="empleadoList">
+			<!-- Agregar aquí empleados -->
+		</tbody>
+	</table>
+
+	<script type="text/template" id="rowTemplate">
+		<tr>
+			<td>#nombre</td><td>#apellido</td><td>#cumpleanos</td>
+		</tr>
+	</script>
+
+	<script>
+		function listar() {
+			$.get("/ejemplorest/empleado.json")
+				.done( function(data) {
+					$("#empleadoList").empty();
+					$.each(data, agregarEmpleado);
+				});
+		}
+
+		function agregarEmpleado(index, empleado) {
+			var str = $("#rowTemplate").html();
+
+			str = str.replace("#nombre", empleado.name);
+			str = str.replace("#apellido", empleado.lastname);
+			str = str.replace("#cumpleanos", empleado.birthday);
+
+			$("#empleadoList").append(str);
+		}
+
+		listar();
+		listar();
+		listar();
+	</script>
+</body>
+</html>
