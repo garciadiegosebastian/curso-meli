@@ -42,22 +42,14 @@
 			<td>#apellido</td>
 			<td>#cumpleanos</td>
 			<td>
-				<a onclick="borrarEmpleado(#id)"><span class="glyphicon glyphicon-remove"></span></a>
-				<a onclick="seleccionarEmpleado(#id)"><span class="glyphicon glyphicon-edit"></span></a>
+				<a onclick="borrar_empleado(#id)"><span class="glyphicon glyphicon-remove"></span></a>
+				<a onclick="recuperar_empleado(#id)"><span class="glyphicon glyphicon-edit"></span></a>
 			</td>
 		</tr>
 	</script>
 
 	<script>
-		function listar() {
-			$.get("/ejemplorest/empleado.json")
-				.done( function(data) {
-					$("#empleadoList").empty();
-					$.each(data, agregarEmpleado);
-				});
-		}
-
-		function agregarEmpleado(index, empleado) {
+		function agregar_empleado_tabla(index, empleado) {
 			var str = $("#rowTemplate").html();
 
 			str = str.replace("#nombre", empleado.name);
@@ -72,30 +64,22 @@
 			$("#empleadoList").append(str);
 		}
 
-		function borrarEmpleado(idEmpleado) {
-			var promise = $.ajax("/ejemplorest/empleado/" + idEmpleado + ".json", { method: "DELETE" });
-			promise.done(function() {
-				// Cuando se confirma que se borro el empleado, lo quitamos de la tabla, pero para eso
-				// necesitamos poder identificar la fila, por eso agegamos un id a cada fila
-				$("#row"+idEmpleado).remove();
-			});
+		function quitar_empleado_tabla(idEmpleado) {
+			$("#row"+idEmpleado).remove();
 		}
 
-		function seleccionarEmpleado(idEmpleado) {
-			var promise = $.ajax("/ejemplorest/empleado/" + idEmpleado + ".json", { method: "GET"});
-			promise.done(function(data) {
-				// Colocamos en los input de formulario los datos del empleado
-				$("#txtnombre").val( data.name );
-				$("#txtapellido").val( data.lastname );
-				$("#txtnacimiento").val( data.birthday );
-				$("#txtidEmpleado").val( data.id );
+		function cargar_formulario(data) {
+			// Colocamos en los input de formulario los datos del empleado
+			$("#txtnombre").val( data.name );
+			$("#txtapellido").val( data.lastname );
+			$("#txtnacimiento").val( data.birthday );
+			$("#txtidEmpleado").val( data.id );
 
-				// Cambiamos el texto del boton Crear a Modificar
-				$("#btnCrearModificar").html("Modificar empleado")
-			})
+			// Cambiamos el texto del boton Crear a Modificar
+			$("#btnCrearModificar").html("Modificar empleado")
 		}
 
-		function cancelar() {
+		function limpiar_formulario() {
 			$("#txtnombre").val("");
 			$("#txtapellido").val("");
 			$("#txtnacimiento").val("");
@@ -104,7 +88,15 @@
 			$("#btnCrearModificar").html("Crear empleado")
 		}
 
-		function crearEmpleado(json) {
+		function cargar_tabla_empleados() {
+			$.get("/ejemplorest/empleado.json")
+				.done( function(data) {
+					$("#empleadoList").empty();
+					$.each(data, agregar_empleado_tabla);
+				});
+		}
+
+		function crear_empleado(json) {
 			var promise = $.ajax("/ejemplorest/empleado.json", {
 				method: "POST",
 				contentType: 'application/json; charset=utf-8',
@@ -112,12 +104,26 @@
 			});
 
 			promise.done(function(empleado) {
-				agregarEmpleado(0, empleado);
-				cancelar();
+				agregar_empleado_tabla(0, empleado);
+				limpiar_formulario();
 			});
 		}
 
-		function modificarEmpleado(idEmpleado, json) {
+		function recuperar_empleado(idEmpleado) {
+			var promise = $.ajax("/ejemplorest/empleado/" + idEmpleado + ".json", { method: "GET"});
+			promise.done( cargar_formulario );	
+		}
+
+		function borrar_empleado(idEmpleado) {
+			var promise = $.ajax("/ejemplorest/empleado/" + idEmpleado + ".json", { method: "DELETE" });
+			promise.done(function() {
+				// Cuando se confirma que se borro el empleado, lo quitamos de la tabla, pero para eso
+				// necesitamos poder identificar la fila, por eso agegamos un id a cada fila
+				quitar_empleado_tabla(idEmpleado);
+			});
+		}
+
+		function modificar_empleado(idEmpleado, json) {
 			var promise = $.ajax("/ejemplorest/empleado/" + idEmpleado + ".json", {
 				method: "PUT",
 				contentType: 'application/json; charset=utf-8',
@@ -125,13 +131,13 @@
 			});
 
 			promise.done(function(empleado) {
-				$("#row"+idEmpleado).remove();
-				agregarEmpleado(0, empleado);
-				cancelar();
+				quitar_empleado_tabla(idEmpleado);
+				agregar_empleado_tabla(0, empleado);
+				limpiar_formulario();
 			});
 		}
 
-		$("#btnCancelar").click(cancelar);
+		$("#btnCancelar").click(limpiar_formulario);
 
 		$("#btnCrearModificar").click(function() {
 			var json = {
@@ -142,11 +148,11 @@
 
 			// Si tenemos un id de empleado, es una modificacion
 			// en aso contrario es una creacion
-			if( $("#txtidEmpleado").val() ) modificarEmpleado($("#txtidEmpleado").val(), json);
-			else crearEmpleado(json)
+			if( $("#txtidEmpleado").val() ) modificar_empleado($("#txtidEmpleado").val(), json);
+			else crear_empleado(json)
 		});
 
-		listar();
+		cargar_tabla_empleados();
 	</script>
 </body>
 </html>
