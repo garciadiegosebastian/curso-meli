@@ -12,8 +12,6 @@ class EmpleadoController extends RestfulController {
     def index(Integer max) {
         params.max = Math.min(max ?: 10, 100)
 
-        println "Abajo esta lo que se busca"
-        println params.q + "%"
         def empleados =  Empleado.findAllByNameLike(params.q?:"" + "%");
         respond empleados
     }
