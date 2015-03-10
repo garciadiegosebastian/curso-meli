@@ -42,7 +42,7 @@ Este proceso se disparará entrando a la pagina /reporte_regalos_del_mes la cual
 
 ### blancoYdorado 
 * **Integrantes:**  Kenneth Weinberg Waks, Candelaria Campos
-* **Repositorio:** https://github.com/candecp/proyecto1.git
+* **Repositorio:** https://github.com/candecp/cumples.git
 
 ### aplicacion-meli
 * **Integrantes:**  Ayelen Tolay, Lucas Rossi, Francisco Curdi
