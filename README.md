@@ -34,7 +34,7 @@ Este proceso se disparará entrando a la pagina /reporte_regalos_del_mes la cual
 
 ### iCro 
 * **Integrantes:**  Uriel Mysler, Jorge Cabrera
-* **Repositorio:** https://github.com/UrielMys/meli-regalos.git
+* **Repositorio:** https://github.com/jorgecabrera/meli-regalos.git
 
 ### Team42 
 * **Integrantes:**  Eric Brandwein, Diego Sebastian García
