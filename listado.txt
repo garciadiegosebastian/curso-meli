@@ -11,8 +11,8 @@ Ayelen Tolay ayelen.tolay@mercadolibre.com /lucasr20/aplicacion-meli - Viernes 6
 Lucas Rossi lucasrossi20@gmail.com /lucasr20/aplicacion-meli - Viernes 6
 Francisco Curdi franciscocurdi@gmail.com /lucasr20/aplicacion-meli - Viernes 6
 
-Candelaria Campos cande.cp@gmail.com     blancoYdorado 2 dias https ://github.com/candecp/proyecto1.git
-Kenneth Weinberg Waks ken.weinberg@mercadolibre.com     blancoYdorado 2 dias https://github.com/candecp/proyecto1.git
+Candelaria Campos cande.cp@gmail.com     blancoYdorado 2 dias https://github.com/candecp/cumples.git
+Kenneth Weinberg Waks ken.weinberg@mercadolibre.com     blancoYdorado 2 dias https://github.com/candecp/cumples.git
 
 Eric Brandwein eric.brandwein@mercadolibre.com Team42 - Entrega: 6/3 - https://github.com/ericbrandwein/organizador-de-regalos
 Diego Sebastian García garciadiegosebastian@gmail.com       Team42 - Entrega: 6/3 - https://github.com/ericbrandwein/organizador-de-regalos
