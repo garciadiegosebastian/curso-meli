@@ -22,6 +22,16 @@ Como los gastos por regalo se dispararon, un gerente solicita que se le envíe u
 
 Este proceso se disparará entrando a la pagina /reporte_regalos_del_mes la cual enviará un email a los integrantes del grupo donde figurará el costo total de los regalos.
 
+## ABM Rest
+
+Ya existe una aplicación que gestiona los usuarios de la empresa. Por lo tanto el ABM de usuarios es un poco incómodo. No se quiere borrar este ABM porque a veces resulta útil, peor se quiere exponer toda la funcionalidad de ABM de usuarios por medio de un servicio REST para que sea fácil modificar la otra aplicación para que actualice la información de los usuarios en esta.
+
+## Precios variantes
+
+En el futuro MercadoLibre decide que una publicación puede cambiar de precio. Entonces en el envio del mail con el costo de lo regalos de ese mes, si este precio se guardaba al momento de cargar el regalo, puede quedar desactualizado.
+
+Por tal motivo, se solicita que el precio de los regalos se obtenga en el momento de generar el envio de emails. No antes.
+
 ## Integrantes y grupos
 
 ### Meteoro 
