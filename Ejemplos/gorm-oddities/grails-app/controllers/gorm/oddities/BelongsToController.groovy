@@ -18,22 +18,10 @@ class BelongsToController {
     	usuario.addToDirecciones(direccion2)
 
     	usuario.save(failOnError: true, flush: true)
-
-    	[
-	    	usuarios: Usuario.list(),
-	    	direcciones: Direccion.list(),
-	    	telefonos: Telefono.list(),
-    	]
     }
 
     def delete() {
     	def usuarios = Usuario.list()
     	usuarios.each { it.delete(flush: true, failOnError: true) }
-
-    	[
-	    	usuarios: Usuario.list(),
-	    	direcciones: Direccion.list(),
-	    	telefonos: Telefono.list(),
-    	]
     }
 }

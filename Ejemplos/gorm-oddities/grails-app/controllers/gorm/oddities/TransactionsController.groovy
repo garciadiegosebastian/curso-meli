@@ -18,24 +18,23 @@ class TransactionsController {
     	usuario.addToDirecciones(direccion2)
 
     	usuario.save(failOnError: true, flush: true)
-
-		[
-	    	usuarios: Usuario.list(),
-	    	direcciones: Direccion.list(),
-	    	telefonos: Telefono.list(),
-		]
 	}
 
 	def editWithoutSave() {
+		Usuario.withTransaction { status ->
+			def usuario = Usuario.findByNombre("Fernando")
+			usuario.nombre = "Fernando Ariel"
+			usuario.telefonos[1].numero = "666-6666"
+		}
+	}
+
+	def noTransactions() {
 		def usuario = Usuario.findByNombre("Fernando")
 		usuario.nombre = "Fernando Ariel"
 		usuario.telefonos[1].numero = "666-6666"
+		usuario.save()
 
-		[
-	    	usuarios: Usuario.list(),
-	    	direcciones: Direccion.list(),
-	    	telefonos: Telefono.list(),
-		]
+		render view: "result"
 	}
 
 	def checkedException() {
@@ -49,12 +48,6 @@ class TransactionsController {
 			}
 		}
 		catch(Exception e) {}
-
-		[
-	    	usuarios: Usuario.list(),
-	    	direcciones: Direccion.list(),
-	    	telefonos: Telefono.list(),
-		]
 	}
 
 	def runtimeException() {
@@ -68,11 +61,5 @@ class TransactionsController {
 			}
 		}
 		catch(Exception e) {}
-
-		[
-	    	usuarios: Usuario.list(),
-	    	direcciones: Direccion.list(),
-	    	telefonos: Telefono.list(),
-		]
 	}
 }

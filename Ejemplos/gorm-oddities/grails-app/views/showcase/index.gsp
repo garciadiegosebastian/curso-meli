@@ -6,6 +6,7 @@
 	</style>
 </head>
 <body>
+	<meli:databaseStatus />
 	<h1>Casos de prueba de GORM</h1>
 	<ul>
 		<li>

@@ -7,6 +7,8 @@
 </head>
 <body>
 	<h1>Crear usuarios y teléfonos</h1>
+	<meli:databaseStatus />
+
 	<form method="post" action="${createLink(action: 'initialize')}">
 		<button>Click para crear los datos necesarios</button>
 	</form>
