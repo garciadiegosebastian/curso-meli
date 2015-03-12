@@ -26,6 +26,8 @@ class TransactionsController {
 			usuario.nombre = "Fernando Ariel"
 			usuario.telefonos[1].numero = "666-6666"
 		}
+
+		render view: "result"
 	}
 
 	def noTransactions() {
@@ -48,6 +50,8 @@ class TransactionsController {
 			}
 		}
 		catch(Exception e) {}
+
+		render view: "result"
 	}
 
 	def runtimeException() {
@@ -61,5 +65,7 @@ class TransactionsController {
 			}
 		}
 		catch(Exception e) {}
+		
+		render view: "result"
 	}
 }
