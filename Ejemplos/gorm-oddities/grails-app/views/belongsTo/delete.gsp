@@ -10,5 +10,6 @@
 	<p>Esta es la información actual en la base de datos</p>
 	
 	<meli:databaseStatus />
+	<a href="${createLink(controller: 'showcase', action: 'index')}">Volver al home</a>
 </body>
 </html>
