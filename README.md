@@ -49,6 +49,7 @@ Por tal motivo, se solicita que el precio de los regalos se obtenga en el moment
 ### Team42 
 * **Integrantes:**  Eric Brandwein, Diego Sebastian García
 * **Repositorio:** https://github.com/garciadiegosebastian/organizadorDeRegalos
+* Fork a blancoYdorado: https://github.com/ericbrandwein/cumples
 
 ### blancoYdorado 
 * **Integrantes:**  Kenneth Weinberg Waks, Candelaria Campos
